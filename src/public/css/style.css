@@ -1,0 +1,210 @@
+:root {
+    --text-type-color: #FFFFFF;
+    --text-button-color: #FFFFFF;
+    --text-id-color: #919191;
+    --text-name-color: #4E4848;
+    --bg-image-color: #F2F2F2;
+    --primary: #FFFFFF;
+    --btn-primary-color: #30A7D7;
+}
+
+* {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 12px 50px;
+    padding: 15px 20px;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    width: 1340px;
+}
+
+/* Card */
+.card {
+    font-size: 0; /* white space gap */
+    width: 200px;
+    height: 270px;
+}
+
+.card img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: var(--bg-image-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 2px 8px 4px;
+}
+
+.card-id {
+    font-weight: 200;
+    font-size: 14px;
+    color: var(--text-id-color);
+}
+
+.card-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-types {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    margin-top: 4px;
+}
+
+.card-type__item {
+    color: var(--text-type-color);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 3px;
+    width: 80px;
+    height: 18px;
+}
+/* end Card */
+
+/* Types */
+.bg-type-normal {
+    background-color: #929DA3;
+}
+.bg-type-fighting {
+    background-color: #CE416B;
+}
+.bg-type-flying {
+    background-color: #8FA9DE;
+}
+.bg-type-poison {
+    background-color: #AA6BC8;
+}
+.bg-type-ground {
+    background-color: #D97845;
+}
+.bg-type-rock {
+    background-color: #C5B78C;
+}
+.bg-type-bug {
+    background-color: #91C12F;
+}
+.bg-type-ghost {
+    background-color: #5269AD;
+}
+.bg-type-steel {
+    background-color: #5A8EA2;
+}
+.bg-type-fire {
+    background-color: #FF9D55;
+}
+.bg-type-water {
+    background-color: #5090D6;
+}
+.bg-type-grass {
+    background-color: #63BC5A;
+}
+.bg-type-electric {
+    background-color: #F4D23C;
+}
+.bg-type-psychic {
+    background-color: #FA7179;
+}
+.bg-type-ice {
+    background-color: #73CEC0;
+}
+.bg-type-dragon {
+    background-color: #0B6DC3;
+}
+.bg-type-dark {
+    background-color: #5A5465;
+}
+.bg-type-fairy {
+    background-color: #EC8FE6;
+}
+.bg-type-unknow {
+    background-color: #68A090;
+}
+.bg-type-physical {
+    background-color: #EA551E;
+}
+.bg-type-special {
+    background-color: #1F4E94;
+}
+.bg-type-status {
+    background-color: #999999;
+}
+/* end Types */
+.btn {
+    font-size: 20px;
+    color: var(--text-button-color);
+    border: none;
+    border-radius: 8px;
+    padding: 9px 40px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+.btn-primary {
+    background-color: var(--btn-primary-color);
+}
+
+.loader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.loader__ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:var(--btn-primary-color);
+    animation: scaling 2s infinite ease-in-out;
+}
+
+@keyframes scaling {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(50%);
+    }
+}
+
+.loader :nth-child(1) {
+    animation-delay: 0s;
+}
+.loader :nth-child(2) {
+    animation-delay: 0.2s;
+}
+.loader :nth-child(3) {
+    animation-delay: 0.4s;
+}
+.loader :nth-child(4) {
+    animation-delay: 0.6s;
+}
+.loader :nth-child(5) {
+    animation-delay: 0.8s;
+}
+.d-none {
+    display: none;
+}
