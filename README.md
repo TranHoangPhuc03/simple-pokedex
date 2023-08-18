@@ -15,7 +15,7 @@ This project utilizes the PokéAPI and employs client-side rendering. When loadi
 
 ### Installing
 
-```
+```bash
 # Set up a new node project
 npm init
 
